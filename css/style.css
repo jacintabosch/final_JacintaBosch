@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Source+Sans+Pro&display=swap');
+
+nav {
+    font-family: Source Sans Pro;
+}
+
+#flecha {
+    width: 80px;
+    margin-left: 60px;
+    margin-top: 80px;
+    animation: move 2s infinite;
+    animation-direction: alternate-reverse;
+    scale: 100%;
+}
+
+#flecha:hover{
+    scale: 120%;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+
+
+@keyframes move {
+    from {
+       opacity: 100%;;
+    }
+    to {
+       opacity: 0%;
+    }
+
+}
+
+h1 {
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 50px;
+    margin-top: 10px;
+    padding-left: 60px;
+    
+}
+
+.col-12 {
+    height: 80vh;
+    width: 90vw;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-family: DM Sans;
+    font-size: 48px;
+    margin-bottom: auto;
+    margin-top: 75px;
+}
+p { /*Texto*/
+    font-family: Source Sans Pro;
+    font-size: 20px;
+    width: 65%;
+    margin-bottom: 8vh;
+}
+
+.row div { 
+    margin-bottom: 10px; 
+}
+
+img {
+    object-fit: fill;
+    opacity: 100%;
+}
+
+img:hover {
+    opacity: 30%;
+}
+
+#info {
+    color: #C4C4C4;
+
+}
+
+button {
+    margin-bottom: 50px;
+
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+@media(max-width:992px)
+{
+    #flecha {
+        width: 50px;
+    }
+
+    h1{
+        margin-top: 15px;
+        text-align: center;
+        padding-left: 0%;
+    }
+    h2 {
+        font-family: DM Sans;
+        font-size: 40px;
+        margin-top: 60px;
+        text-align: center;
+    }
+    .col-12 {
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    p{
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    button{
+        width: 26%;
+        margin-bottom: 20px;
+    }
+}
+
